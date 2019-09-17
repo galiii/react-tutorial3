@@ -8,12 +8,12 @@ import Todo from './components/Todo';
 function App() {
   return (
     <div className="App">
-      <header className=" App-header">
+      <div className=" App-header">
       <HelloWorld />
         <Counter />
         <Todo />
 
-      </header>
+      </div>
       
     </div>
   );

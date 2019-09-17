@@ -24,11 +24,6 @@
   
 }
 
-.App-buttom {
-  
-  min-height: 100vh;
-  
-}
 
 .App-link {
   color: #61dafb;
@@ -41,4 +36,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Counter component */
+.counter{
+  min-width: 100vh;
+  background-color: #61dafb
+}
+
+
+/* Todo component */
+.todo label {
+  display: block;
+}
+
+
+/* List component */
+
+.list{
+  background-color: #eebbdd
+}
+
+
+
+.list ul li button{
+  float: right;
+  right: 1%;
+  margin-top: 4.5%
 }

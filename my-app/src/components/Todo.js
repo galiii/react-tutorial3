@@ -45,13 +45,19 @@ onSubmitItem = (e) => {
 
 render(){
   return(
-      <div className="App">
+      <div className="App todo">
+        <label>Todo List</label>
+        <List tasks={this.state.tasks}/>
           <form  onSubmit={this.onSubmitItem}>
-             <label>Todo List</label>
-            <input value ={this.state.term} onChange ={this.onAddItem}></input> 
+             
+            <input 
+              value={this.state.term} 
+              onChange ={this.onAddItem} 
+              placeholder="Add Task">
+            </input> 
             <button>ADD</button>
           </form>
-          <List tasks={this.state.tasks}/>
+          
       </div>
   );  
 }
