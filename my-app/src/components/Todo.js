@@ -43,11 +43,27 @@ onSubmitItem = (e) => {
   });
 }
 
+/*
+taskDelete the value that should be delete
+index is the postion 
+*/
+deleteItem = (taskDelete,index) => {
+const {tasks} = this.state; 
+ console.log(taskDelete);
+ console.log(index);
+ //Using slice
+ tasks.splice(index, 1);
+ this.setState({ tasks:tasks});
+}
+
 render(){
   return(
       <div className="App todo">
-        <label>Todo List</label>
-        <List tasks={this.state.tasks}/>
+        <span>Todo List</span>
+        <List 
+            tasks={this.state.tasks}
+            deleteItem={this.deleteItem}
+            />
           <form  onSubmit={this.onSubmitItem}>
              
             <input 

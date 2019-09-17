@@ -54,13 +54,13 @@
 /* List component */
 
 .list{
+  min-width: 100vh;
   background-color: #eebbdd
 }
 
 
 
-.list ul li button{
+.list ul li a{
   float: right;
-  right: 1%;
-  margin-top: 4.5%
+  font-size: calc(5px + 2vmin);
 }

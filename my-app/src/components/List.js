@@ -1,15 +1,19 @@
 import React from 'react';
 
 
-export default function List({tasks}){
+function List(props){
+    const items = props.tasks;
 return(
     <div className="list">
         <ul>
             {
-                tasks.map((task,index)=> (
+                items.map((task,index)=> (
                 <li key={index}>
                 {task}
-                <button>X</button>
+                <a 
+                herf="#"
+                onClick={()=>props.deleteItem(task,index)}
+                >[X]</a>
                 </li>
                 ))
             }
@@ -17,3 +21,5 @@ return(
     </div>
 )
 }
+
+export default List;
