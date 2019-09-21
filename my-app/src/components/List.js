@@ -1,26 +1,22 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React from "react";
+import Item from "./Item";
 
-
-function List({tasks,deleteItem}){
-    const items = tasks;
-return(
-    <div className="list">
-        <ul>
-            {
-                items.map((task,index)=> (
-                <li key={index}>
-                {task}
-                <a  
-                onClick={()=> deleteItem(task,index)}>
-                    [X]
-                    </a>
-                </li>
-                ))
-            }
-        </ul>
+const List = ({ tasks }) => {
+  return (
+    <div className="App-list">
+      <ul className="list">
+        {tasks.map((item, index) => (
+          <Item
+            key={index}
+            done={item.done}
+            title={item.title}
+            stat={item.stat}
+            usr={item.usr}
+          />
+        ))}
+      </ul>
     </div>
-)
-}
+  );
+};
 
 export default List;

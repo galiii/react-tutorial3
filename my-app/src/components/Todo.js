@@ -1,75 +1,58 @@
-import React from 'react';
-import List from './List'
+import React from "react";
+import List from "./List";
 
+/* Will be removed */
+const tasksTemp = [];
+tasksTemp.push({
+  dueDate: 1,
+  done: true,
+  title: "Defualt\t",
+  stat: "planning",
+  usr: "img1"
+});
+tasksTemp.push({
+  dueDate: 2,
+  done: true,
+  title: "another\tname",
+  stat: "in\tBeta",
+  usr: "img2"
+});
+tasksTemp.push({
+  dueDate: 3,
+  done: true,
+  title: "Dan\ttask",
+  stat: "a\b test",
+  usr: "img3"
+});
+tasksTemp.push({
+  dueDate: 4,
+  done: true,
+  title: "defualt: new task",
+  stat: "in Beta",
+  usr: "img4"
+});
+tasksTemp.push({
+  dueDate: 5,
+  done: false,
+  title: "task 1",
+  stat: "planning",
+  usr: "img5"
+});
 
-class Todo extends React.Component{
+class Todo extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { tasks: tasksTemp }; //for now in order to focus on the css
+  }
 
-constructor(props){
- super(props);
- this.state = {
- tasks : [], //to store every value witch we passing to our todo list
- term :'' //to store what we passing as a value to our input 
- };
-}
-
-
-/*
-input on value onAddItem method
-value - target takes what stored in our state as term
-onAddItem is a function witch changes our state depanding on the current input value.
-to change state we need this.setState() witch also triggers our UI updates
-*/
-onAddItem = (e) => {
-  this.setState({term: e.target.value});
-}
-
-//Form with onSubmit method 
-//Now we need to warp our input field with an add button
-onSubmitItem = (e) => {
-  e.preventDefault(); //method stops default action of an element from happing  
-
-  this.setState({
-  /*
-  cleans the input fields inside a form after a submit action is triggered, 
-  by resetting 'term' to the initinal empty string value
-  */ 
-    term:'',
-  //pushes every 'term' to our array of tasks after submit
-    tasks: [...this.state.tasks,this.state.term]
-  });
-}
-
-/*
-taskDelete the value that should be delete
-index is the postion 
-*/
-deleteItem = (taskDelete,index) => {
-const {tasks} = this.state; 
- console.log(taskDelete);
- console.log(index);
- 
- tasks.splice(index, 1);//Using slice
- this.setState({tasks:tasks});
-}
-
-render(){
-  return(
-      <div className="App todo">
-        <span>Todo List</span>
-        <List 
-            tasks={this.state.tasks}
-            deleteItem={this.deleteItem}
-            />
-          <form  onSubmit={this.onSubmitItem}>          
-            <input 
-              value={this.state.term} 
-              onChange ={this.onAddItem} 
-              placeholder="Add Task">
-            </input> 
-            <button>ADD</button>
-          </form>    
+  render() {
+    return (
+      <div className="App">
+        <div>Todo List App On React</div>
+        <List tasks={this.state.tasks} />
       </div>
-  );  
-}};
+    );
+  }
+}
 
 export default Todo;
