@@ -1,6 +1,7 @@
 import React from "react";
 import List from "./List";
 
+//const tt;
 /* Will be removed */
 const tasksTemp = [];
 tasksTemp.push({
@@ -19,7 +20,7 @@ tasksTemp.push({
 });
 tasksTemp.push({
   dueDate: 3,
-  done: true,
+  done: false,
   title: "Dan\ttask",
   stat: "a\b test",
   usr: "img3"

@@ -10,6 +10,7 @@ const List = ({ tasks }) => {
             key={index}
             done={item.done}
             title={item.title}
+            dueDate={item.dueDate}
             stat={item.stat}
             usr={item.usr}
           />

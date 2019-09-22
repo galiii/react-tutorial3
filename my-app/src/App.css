@@ -51,23 +51,41 @@ ul {
   min-width: 100vh;
   background-color: #eebbdd;
 }
-
-/*Item user-img*/
-li .img-usr {
-  float: right;
+/* Done item*/
+.check-item {
+  border: 2px solid black;
+  border-radius: 60%;
+  float: left;
 }
 
+.done-item {
+  background-color: #7fffd4;
+  color: #282c34;
+}
+.undone-item {
+  background-color: #f0f8ff;
+  color: #282c34;
+}
 /*Item title*/
 li .item-title {
   background: #282c34;
   float: left;
-  padding-left: 5%;
+  padding-left: 2%;
 }
 
-li .item-done {
-  background-color: green;
-  color: #282c34;
-  float: left;
+/*Item user-img*/
+.img-usr {
+  float: right;
+  background-color: #61dafb;
+  font-size: smaller;
+  border: 2px solid black;
+  border-radius: 100%;
+}
+
+/*Status Item*/
+.status-item {
+  background-color: #565656;
+  margin: auto;
 }
 
 .list ul li a {
