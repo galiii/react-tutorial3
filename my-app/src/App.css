@@ -40,6 +40,17 @@
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 5px dotted wheat;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  border: 1px solid purple;
+  margin: 0.5em;
+  padding: 0.5em;
 }
 /* Todo component */
 .todo label {

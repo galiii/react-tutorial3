@@ -22,7 +22,7 @@ tasksTemp.push({
   dueDate: 3,
   done: false,
   title: "Dan\ttask",
-  stat: "a\b test",
+  stat: "a/b test",
   usr: "img3"
 });
 tasksTemp.push({
