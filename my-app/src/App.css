@@ -62,11 +62,48 @@ li {
   min-width: 100vh;
   background-color: #eebbdd;
 }
-/* Done item*/
+
+.warpper-list {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  align-items: flex-start;
+  background-color: #61dafb;
+}
+
+.warpper-list > div {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.start-warp {
+  background-color: beige;
+  display: flex;
+  flex: 1;
+  /*justify-content: flex-start;*/
+}
+
+.start-warp > div {
+  margin: 0.4em;
+}
+
+.end-warp {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  /*justify-content: flex-end;*/
+  /*align-self: center;*/
+  background-color: #565656;
+}
+
+.end-warp > div {
+  margin: 0.4em;
+}
+
+/*** Done item ***/
 .check-item {
   border: 2px solid black;
   border-radius: 60%;
-  float: left;
+  /*float: left;*/
 }
 
 .done-item {
@@ -77,11 +114,21 @@ li {
   background-color: #f0f8ff;
   color: #282c34;
 }
-/*Item title*/
-li .item-title {
+/*** Item title ***/
+.item-title {
   background: #282c34;
-  float: left;
-  padding-left: 2%;
+  /*float: left;*/
+  /*padding-left: 2%;*/
+}
+
+.date-item {
+  background-color: purple;
+}
+
+/*Status Item*/
+.status-item {
+  background-color: #565656;
+  /*margin: auto;*/
 }
 
 /*Item user-img*/
@@ -91,12 +138,6 @@ li .item-title {
   font-size: smaller;
   border: 2px solid black;
   border-radius: 100%;
-}
-
-/*Status Item*/
-.status-item {
-  background-color: #565656;
-  margin: auto;
 }
 
 .list ul li a {
