@@ -15,7 +15,7 @@ tasksTemp.push({
   dueDate: 2,
   done: true,
   title: "another\tname",
-  stat: "in\tBeta",
+  stat: "in Beta",
   usr: "img2"
 });
 tasksTemp.push({

@@ -16,7 +16,15 @@ export default function Item({ index, done, title, dueDate, stat, usr }) {
         </div>
         <div className="end-warp">
           <div className="date-item">{dueDate}</div>
-          <div className="status-item">{stat}</div>
+          <div
+            className={`status-item
+          ${stat === "planning" ? "status-item-plan" : ""}
+          ${stat === "in Beta" ? "status-item-beta" : ""}
+          ${stat === "a/b test" ? "status-item-test" : ""}
+        `}
+          >
+            {stat}
+          </div>
           <div className="img-usr">{usr}</div>
         </div>
       </div>
