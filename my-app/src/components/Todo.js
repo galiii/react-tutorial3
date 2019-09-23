@@ -40,6 +40,14 @@ tasksTemp.push({
   usr: "img5"
 });
 
+tasksTemp.push({
+  dueDate: 6,
+  done: false,
+  title: "this is a big bal bal bal bal bal",
+  stat: "planning",
+  usr: "img6"
+});
+
 class Todo extends React.Component {
   constructor(props) {
     super(props);

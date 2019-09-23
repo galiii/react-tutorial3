@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "./img/gali.jpg"; // Tell Webpack this JS file uses this image
 
 export default function Item({ index, done, title, dueDate, stat, usr }) {
   return (
@@ -25,7 +26,9 @@ export default function Item({ index, done, title, dueDate, stat, usr }) {
           >
             {stat}
           </div>
-          <div className="img-usr">{usr}</div>
+          <div className="img-usr">
+            <img src={logo} alt="Logo" />
+          </div>
         </div>
       </div>
     </li>
