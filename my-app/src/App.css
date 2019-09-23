@@ -78,16 +78,62 @@ li {
 }
 
 .start-warp {
-  background-color: beige;
+  background-color: whitesmoke;
   display: flex;
   /*flex: 1;*/
+  justify-content: flex-start;
+  /*flex: 1;*/
   /*justify-content: flex-start;*/
+  /*margin: 0;
+  padding: 0;*/
 }
 
 .start-warp > div {
   margin: 0.4em;
+  /* margin: 0.4em;
+  padding: 0.4em;*/
 }
 
+/*** Done item ***/
+.check-item {
+  /*border: 2px solid grey;*/
+  /*border-radius: 100%;*/
+  /*float: left;*/
+}
+.check-item > div {
+  /*width: 30px;*/
+  /*border: 2px solid black;*/
+  padding: 0.1em;
+  border-radius: 100%;
+}
+
+.fas {
+  font-weight: 600;
+}
+.done-item {
+  border: none;
+  border-radius: 100%;
+  background-color: #77f0c7;
+  color: white;
+}
+.undone-item {
+  border: 1px solid grey;
+  border-radius: 100%;
+  background-color: #f0f8ff;
+  color: grey;
+}
+/*** Item title ***/
+.item-title {
+  background: #afb7c5;
+  font-size: calc(7px + 2vmin);
+  color: #282c34;
+  /*float: left;*/
+  /*padding-left: 2%;*/
+}
+
+/*************************************************/
+/******************* End Box *********************/
+/*************************************************/
 .end-warp {
   display: flex;
   flex: 1;
@@ -99,29 +145,6 @@ li {
 
 .end-warp > div {
   margin: 0.4em;
-}
-
-/*** Done item ***/
-.check-item {
-  border: 2px solid black;
-  border-radius: 60%;
-  /*float: left;*/
-}
-
-.done-item {
-  background-color: #7fffd4;
-  color: #282c34;
-}
-.undone-item {
-  background-color: #f0f8ff;
-  color: #282c34;
-}
-/*** Item title ***/
-.item-title {
-  background: #282c34;
-  font-size: calc(7px + 2vmin);
-  /*float: left;*/
-  /*padding-left: 2%;*/
 }
 
 .date-item {

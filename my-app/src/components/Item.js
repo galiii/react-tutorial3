@@ -6,13 +6,12 @@ export default function Item({ index, done, title, dueDate, stat, usr }) {
     <li>
       <div className="warpper-list">
         <div className="start-warp">
-          <div
-            className={
-              done
-                ? "fas fa-check done-item check-item"
-                : "fas fa-check undone-item check-item"
-            }
-          ></div>
+          <div className=" check-item">
+            <div
+              className={`fas fa-check
+              ${done ? " done-item " : " undone-item"}`}
+            ></div>
+          </div>
           <div className="item-title">{title}</div>
         </div>
         <div className="end-warp">
