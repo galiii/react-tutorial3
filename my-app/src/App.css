@@ -49,7 +49,6 @@ ul {
 
 li {
   border-bottom: 2px solid black;
-
   /*margin: 0.5em;
   padding: 0.5em;*/
 }
@@ -58,7 +57,9 @@ li {
   display: block;
 }
 
-/* List component */
+/**************************************************************************************/
+/****************************      List Component ****************************************/
+/*************************************************************************************/
 .list {
   min-width: 100vh;
   background-color: #eebbdd;
@@ -148,8 +149,8 @@ li {
 .status-item-test {
   background-color: #61dafb;
 }
-/*Item user-img*/
 
+/*Item user-img*/
 .img-usr {
   float: right;
   background-color: #61dafb;
@@ -170,4 +171,32 @@ li {
 .list ul li a {
   float: right;
   font-size: calc(5px + 2vmin);
+}
+
+/*****  Add Task Component   ******/
+.warpper-add-task {
+  display: flex;
+  flex-wrap: warp;
+  background-color: whitesmoke;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.btn {
+  padding: 15px 32px;
+  background-color: white;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  /*border: 2px solid #008cba;*/
+}
+.btn-task {
+  color: #008cba;
+  border: 2px solid #008cba;
 }

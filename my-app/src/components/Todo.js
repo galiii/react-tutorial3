@@ -1,5 +1,6 @@
 import React from "react";
 import List from "./List";
+import AddTask from "./AddTask";
 
 //const tt;
 /* Will be removed */
@@ -58,6 +59,7 @@ class Todo extends React.Component {
     return (
       <div className="App">
         <div>Todo List App On React</div>
+        <AddTask />
         <List tasks={this.state.tasks} />
       </div>
     );
