@@ -223,3 +223,14 @@ li {
   color: #008cba;
   border: 2px solid #008cba;
 }
+
+.form-task {
+  margin: 0.5em;
+  padding: 0.5em;
+  display: flex;
+  background-color: #008cba;
+}
+
+form > label {
+  padding: 0.4em;
+}
