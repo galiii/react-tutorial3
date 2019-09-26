@@ -33,26 +33,33 @@ tasksTemp.push({
   stat: "in Beta",
   usr: "img4"
 });
-tasksTemp.push({
-  dueDate: 5,
-  done: false,
-  title: "task 1",
-  stat: "planning",
-  usr: "img5"
-});
 
-tasksTemp.push({
-  dueDate: 6,
-  done: false,
-  title: "this is a big bal bal bal bal bal",
-  stat: "planning",
-  usr: "img6"
-});
+const statusTemp = [
+  { id: 1, title: "planning" },
+  { id: 2, title: "in Beta" },
+  { id: 3, title: "a/b test" }
+];
 
 class Todo extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { tasks: tasksTemp }; //for now in order to focus on the css
+    this.state = {
+      tasks: tasksTemp,
+      statusForm: statusTemp,
+      formTask: {
+        dueDate: 0,
+        done: false,
+        title: "new task",
+        stat: "",
+        usr: ""
+      }
+    }; //for now in order to focus on the css
+  }
+
+  handleStatus(e) {
+    const upStat = e.target.value;
+    //this.setState({formTask.sta:})
+    console.log("hello world");
   }
 
   render() {
@@ -61,11 +68,26 @@ class Todo extends React.Component {
         <div>Todo List App On React</div>
         <div className="form-task">
           <form>
-            <label>New Task</label>
-            <input type="text" value="New Task"></input>
+            <label htmlFor="title">
+              New Task
+              <input type="text" value="New Task"></input>
+            </label>
             <br />
-            <label>Status</label>
-            <input type="text" value="Status"></input>
+            <label htmlFor="stat">
+              Choose status
+              <select
+                id="stat"
+                value={this.state.formTask.stat}
+                onChange={this.handleStatus}
+                onBlur={this.handleStatus}
+              >
+                {["planning", "in Beta", "a/b test"].map(item => (
+                  <option key={item} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            </label>
           </form>
         </div>
         <List tasks={this.state.tasks} />
