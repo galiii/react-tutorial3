@@ -94,12 +94,13 @@ li {
   padding: 0.4em;*/
 }
 
-/*** Done item ***/
+/*** Done item 
 .check-item {
   /*border: 2px solid grey;*/
-  /*border-radius: 100%;*/
-  /*float: left;*/
+/*border-radius: 100%;*/
+/*float: left;
 }
+*/
 .check-item > div {
   /*width: 30px;*/
   /*border: 2px solid black;*/
@@ -233,4 +234,17 @@ li {
 
 form > label {
   padding: 0.4em;
+}
+
+.add-task {
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #eebbdd;
+  display: flex;
+  flex: 1;
+  /*flex-wrap: wrap;*/
+}
+
+label {
+  display: block;
 }
