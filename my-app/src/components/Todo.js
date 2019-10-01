@@ -1,8 +1,9 @@
 import React from "react";
+import "./style.css";
 import List from "./List";
-import AddTask from "./AddTask";
+//import AddTask from "./AddTask";
+import FormTask from "./FormTask";
 
-//const tt;
 /* Will be removed */
 const tasksTemp = [];
 tasksTemp.push({
@@ -34,34 +35,27 @@ tasksTemp.push({
   usr: "img4"
 });
 
+/*
 const statusTemp = [
   { id: 1, title: "planning" },
   { id: 2, title: "in Beta" },
   { id: 3, title: "a/b test" }
 ];
-
+*/
 class Todo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      tasks: tasksTemp,
-      statusForm: statusTemp
-    }; //for now in order to focus on the css
+      tasks: tasksTemp
+    };
   }
 
-  /*
-  handleStatus(e) {
-    const upStat = e.target.value;
-    //this.setState({formTask.sta:})
-    console.log("hello world");
-  }
-*/
   render() {
     return (
       <div className="App">
         <div>Todo List App On React</div>
+        <FormTask />
 
-        <AddTask />
         <List tasks={this.state.tasks} />
       </div>
     );

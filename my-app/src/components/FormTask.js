@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 class FormTask extends React.Component {
   state = {

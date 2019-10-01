@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./img/gali.jpg"; // Tell Webpack this JS file uses this image
+import "./style.css";
 
 export default function Item({ index, done, title, dueDate, stat, usr }) {
   return (

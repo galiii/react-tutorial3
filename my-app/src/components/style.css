@@ -1,0 +1,173 @@
+/*****************************************************/
+/*************  AddTask.js Component   **************/
+/***************************************************/
+.warpper-add-task {
+  margin: 0.5em;
+  padding: 0.5em;
+  display: flex;
+  flex-wrap: warp;
+  background-color: whitesmoke;
+}
+
+.btn {
+  padding: 15px 32px;
+  margin: 4px 2px;
+  background-color: white;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-task {
+  color: #008cba;
+  border: 2px solid #008cba;
+}
+
+/******************************************/
+/******     List.js   Component      ******/
+/******************************************/
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 5px dotted wheat;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  min-width: 100vh;
+  background-color: #eebbdd;
+}
+
+li {
+  border-bottom: 2px solid black;
+}
+
+.warpper-list {
+  display: flex;
+  align-items: flex-start;
+}
+
+.warpper-list > div {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.start-warp {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.start-warp > div {
+  margin: 0.4em;
+}
+
+.check-item > div {
+  padding: 0.1em;
+  border-radius: 100%;
+}
+
+/***** Item done undone *****/
+.fas {
+  font-weight: 600;
+}
+.done-item {
+  border: none;
+  border-radius: 100%;
+  background-color: #77f0c7;
+  color: white;
+}
+.undone-item {
+  border: 1px solid grey;
+  border-radius: 100%;
+  background-color: #f0f8ff;
+  color: grey;
+}
+
+/*** Item title ***/
+.item-title {
+  background: #afb7c5;
+  font-size: calc(7px + 2vmin);
+  color: #282c34;
+}
+
+/*************************************************/
+/******************* End Box *********************/
+/*************************************************/
+.end-warp {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  background-color: #565656;
+}
+
+.end-warp > div {
+  margin: 0.4em;
+}
+
+.date-item {
+  background-color: purple;
+}
+
+/*Status Item*/
+.status-item {
+  border: none;
+  border-radius: 5em; /*2em / 5em;*/
+  font-size: smaller;
+  width: 100px;
+}
+
+.status-item-beta {
+  background-color: pink;
+}
+
+.status-item-plan {
+  background-color: #ba55d3;
+}
+
+.status-item-test {
+  background-color: #61dafb;
+}
+
+/*Item user-img*/
+.img-usr {
+  float: right;
+  background-color: #61dafb;
+  border: 2px solid black;
+  border-radius: 100%;
+}
+
+.img-usr > img {
+  width: 30px;
+  float: right;
+  border-radius: 100%;
+}
+
+.form-task {
+  margin: 0.5em;
+  padding: 0.5em;
+  display: flex;
+  background-color: #008cba;
+}
+
+form > label {
+  padding: 0.4em;
+}
+
+.add-task {
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #eebbdd;
+  display: flex;
+  flex: 1;
+}
+
+label {
+  display: block;
+}
