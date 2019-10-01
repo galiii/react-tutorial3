@@ -10,28 +10,28 @@ tasksTemp.push({
   dueDate: 1,
   done: true,
   title: "Defualt\t",
-  stat: "planning",
+  stats: "planning",
   usr: "img1"
 });
 tasksTemp.push({
   dueDate: 2,
   done: true,
   title: "another\tname",
-  stat: "in Beta",
+  stats: "in Beta",
   usr: "img2"
 });
 tasksTemp.push({
   dueDate: 3,
   done: false,
   title: "Dan\ttask",
-  stat: "a/b test",
+  stats: "a/b test",
   usr: "img3"
 });
 tasksTemp.push({
   dueDate: 4,
   done: true,
   title: "defualt: new task",
-  stat: "in Beta",
+  stats: "in Beta",
   usr: "img4"
 });
 
@@ -50,11 +50,19 @@ class Todo extends React.Component {
     };
   }
 
+  addTask = task => {
+    //this.state.tasks.push(task);
+    //const newTasks = [task, ...this.state.tasks];
+    this.setState({
+      tasks: [task, ...this.state.tasks] //newTasks
+    });
+  };
+
   render() {
     return (
       <div className="App">
         <div>Todo List App On React</div>
-        <FormTask />
+        <FormTask onSubmit={this.addTask} tasks={this.state.tasks} />
 
         <List tasks={this.state.tasks} />
       </div>

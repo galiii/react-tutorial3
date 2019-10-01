@@ -2,44 +2,61 @@ import React from "react";
 import "./style.css";
 
 class FormTask extends React.Component {
+  //console.log(props.tasks);
   state = {
     title: "New Task",
     done: false,
     stats: "",
-    dueDate: new Date().toLocaleString()
+    dueDate: 7
   };
 
+  /* The Title input */
   handleTitleChange = event => {
     this.setState({
-      title: event.target.value
+      [event.target.name]: event.target.value
     });
-    console.log("The title is ", this.state.title);
+    //console.log("The title is ", this.state.title);
   };
 
+  /* The status change */
   handleStatusChange = event => {
     this.setState({
       stats: event.target.value
     });
-    console.log("The stats is ", this.state.stats);
+    //console.log("The stats is ", this.state.stats);
+  };
+
+  handleFormSubmit = event => {
+    event.preventDefault();
+    this.props.onSubmit({
+      dueDate: this.props.tasks.length + 1,
+      done: false,
+      title: this.state.title,
+      stats: this.state.stats,
+      usr: "img3"
+    });
+
+    this.setState({
+      title: "New Task",
+      done: false,
+      stats: "",
+      dueDate: 0
+    });
   };
 
   render() {
     return (
       <div className="add-task">
-        <form>
+        <form onSubmit={this.handleFormSubmit}>
           <div>Add New Task</div>
           <label htmlFor="title">
             Add title:
             <input
               id="title"
+              name="title"
               value={this.state.title}
               onChange={this.handleTitleChange}
             />
-          </label>
-
-          <label htmlFor="date">
-            Date {this.state.dueDate}
-            <input id="dueDate" type="date" step="7"></input>
           </label>
           <label htmlFor="stats">
             Choose status:
@@ -58,6 +75,7 @@ class FormTask extends React.Component {
               ))}
             </select>
           </label>
+          <button>Submmit</button>
         </form>
       </div>
     );

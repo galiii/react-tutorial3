@@ -11,7 +11,7 @@ const List = ({ tasks }) => {
           done={item.done}
           title={item.title}
           dueDate={item.dueDate}
-          stat={item.stat}
+          stats={item.stats}
           usr={item.usr}
         />
       ))}

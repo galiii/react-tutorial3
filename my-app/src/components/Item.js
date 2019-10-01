@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./img/gali.jpg"; // Tell Webpack this JS file uses this image
 import "./style.css";
 
-export default function Item({ index, done, title, dueDate, stat, usr }) {
+export default function Item({ index, done, title, dueDate, stats, usr }) {
   return (
     <li>
       <div className="warpper-list">
@@ -19,12 +19,12 @@ export default function Item({ index, done, title, dueDate, stat, usr }) {
           <div className="date-item">{dueDate}</div>
           <div
             className={`status-item
-          ${stat === "planning" ? "status-item-plan" : ""}
-          ${stat === "in Beta" ? "status-item-beta" : ""}
-          ${stat === "a/b test" ? "status-item-test" : ""}
+          ${stats === "planning" ? "status-item-plan" : ""}
+          ${stats === "in Beta" ? "status-item-beta" : ""}
+          ${stats === "a/b test" ? "status-item-test" : ""}
         `}
           >
-            {stat}
+            {stats}
           </div>
           <div className="img-usr">
             <img src={logo} alt="Logo" />
