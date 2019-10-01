@@ -1,6 +1,6 @@
 import React from "react";
 import List from "./List";
-//import AddTask from "./AddTask";
+import AddTask from "./AddTask";
 
 //const tt;
 /* Will be removed */
@@ -45,51 +45,23 @@ class Todo extends React.Component {
     super(props);
     this.state = {
       tasks: tasksTemp,
-      statusForm: statusTemp,
-      formTask: {
-        dueDate: 0,
-        done: false,
-        title: "new task",
-        stat: "",
-        usr: ""
-      }
+      statusForm: statusTemp
     }; //for now in order to focus on the css
   }
 
+  /*
   handleStatus(e) {
     const upStat = e.target.value;
     //this.setState({formTask.sta:})
     console.log("hello world");
   }
-
+*/
   render() {
     return (
       <div className="App">
         <div>Todo List App On React</div>
-        <div className="form-task">
-          <form>
-            <label htmlFor="title">
-              New Task
-              <input type="text" value="New Task"></input>
-            </label>
-            <br />
-            <label htmlFor="stat">
-              Choose status
-              <select
-                id="stat"
-                value={this.state.formTask.stat}
-                onChange={this.handleStatus}
-                onBlur={this.handleStatus}
-              >
-                {["planning", "in Beta", "a/b test"].map(item => (
-                  <option key={item} value={item}>
-                    {item}
-                  </option>
-                ))}
-              </select>
-            </label>
-          </form>
-        </div>
+
+        <AddTask />
         <List tasks={this.state.tasks} />
       </div>
     );
