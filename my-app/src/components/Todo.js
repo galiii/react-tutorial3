@@ -35,13 +35,6 @@ tasksTemp.push({
   usr: "img4"
 });
 
-/*
-const statusTemp = [
-  { id: 1, title: "planning" },
-  { id: 2, title: "in Beta" },
-  { id: 3, title: "a/b test" }
-];
-*/
 class Todo extends React.Component {
   constructor(props) {
     super(props);
@@ -51,8 +44,6 @@ class Todo extends React.Component {
   }
 
   addTask = task => {
-    //this.state.tasks.push(task);
-    //const newTasks = [task, ...this.state.tasks];
     this.setState({
       tasks: [task, ...this.state.tasks] //newTasks
     });

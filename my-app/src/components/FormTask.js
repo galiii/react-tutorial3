@@ -48,33 +48,35 @@ class FormTask extends React.Component {
     return (
       <div className="add-task">
         <form onSubmit={this.handleFormSubmit}>
-          <div>Add New Task</div>
-          <label htmlFor="title">
-            Add title:
-            <input
-              id="title"
-              name="title"
-              value={this.state.title}
-              onChange={this.handleTitleChange}
-            />
-          </label>
-          <label htmlFor="stats">
-            Choose status:
-            <select
-              id="stats"
-              value={this.state.stats}
-              onChange={this.handleStatusChange}
-              onBlur={this.handleStatusChange}
-            >
-              <option>All</option>
+          <div className="title-form">Add New Task</div>
+          <div className="contact-form">
+            <label htmlFor="title">
+              <p>Add title:</p>
+              <input
+                id="title"
+                name="title"
+                value={this.state.title}
+                onChange={this.handleTitleChange}
+              />
+            </label>
+            <label htmlFor="stats">
+              <p>Choose status:</p>
+              <select
+                id="stats"
+                value={this.state.stats}
+                onChange={this.handleStatusChange}
+                onBlur={this.handleStatusChange}
+              >
+                <option>All</option>
 
-              {["in Beta", "planning", "a/b test"].map(item => (
-                <option key={item} value={item}>
-                  {item}
-                </option>
-              ))}
-            </select>
-          </label>
+                {["in Beta", "planning", "a/b test"].map(item => (
+                  <option key={item} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
           <button>Submmit</button>
         </form>
       </div>
