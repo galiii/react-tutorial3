@@ -78,7 +78,7 @@ ul {
 
 .list {
   min-width: 100vh;
-  background-color: whitesmoke;
+  background-color: #ffffff;
 }
 
 li {
@@ -129,7 +129,7 @@ li {
 
 /*** Item title ***/
 .item-title {
-  background: #afb7c5;
+  background: whitesmoke;
   font-size: calc(7px + 2vmin);
   color: #282c34;
 }
@@ -165,11 +165,11 @@ li {
 }
 
 .status-item-plan {
-  background-color: #ba55d3;
+  background-color: #ab5ce6;
 }
 
 .status-item-test {
-  background-color: #61dafb;
+  background-color: #97defe;
 }
 
 /*Item user-img*/
