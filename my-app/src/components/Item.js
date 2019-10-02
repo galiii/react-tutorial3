@@ -1,11 +1,11 @@
 import React from "react";
 import logo from "./img/gali.jpg"; // Tell Webpack this JS file uses this image
-import "./style.css";
+import "./item.css";
 
 export default function Item({ index, done, title, dueDate, stats, usr }) {
   return (
     <li>
-      <div className="warpper-list">
+      <div className="warpper-list-item">
         <div className="start-warp">
           <div className=" check-item">
             <div

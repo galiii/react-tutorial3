@@ -1,0 +1,21 @@
+/******************************************/
+/******     List.js   Component      ******/
+/******************************************/
+
+.list {
+  margin: 1em;
+  padding: 0.2em;
+  /* min-width: 100vh; */
+  /* display: flex; */
+  /* flex: 1; */
+  /* flex-direction: row; */
+  background-color: #ffffff;
+  /*min-width: 100vh;*/
+}
+
+.list > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 5px dotted wheat;
+}

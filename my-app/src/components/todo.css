@@ -1,0 +1,13 @@
+/* div class warrpper list*/
+
+/*******************************/
+/*      Todo.js Component      */
+/******************************/
+.warrper-list {
+  width: 61%;
+  /*display: flex;*/
+  flex: 1;
+  text-align: center;
+  align-items: center;
+  /*justify-content: center;*/
+}

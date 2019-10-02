@@ -1,21 +1,23 @@
 import React from "react";
-import "./style.css";
+import "./list.css";
 import Item from "./Item";
 
 const List = ({ tasks }) => {
   return (
-    <ul className="list">
-      {tasks.map((item, index) => (
-        <Item
-          key={index}
-          done={item.done}
-          title={item.title}
-          dueDate={item.dueDate}
-          stats={item.stats}
-          usr={item.usr}
-        />
-      ))}
-    </ul>
+    <div className="list">
+      <ul>
+        {tasks.map((item, index) => (
+          <Item
+            key={index}
+            done={item.done}
+            title={item.title}
+            dueDate={item.dueDate}
+            stats={item.stats}
+            usr={item.usr}
+          />
+        ))}
+      </ul>
+    </div>
   );
 };
 

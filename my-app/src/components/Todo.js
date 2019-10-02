@@ -1,8 +1,8 @@
 import React from "react";
-import "./style.css";
+import "./todo.css";
 import List from "./List";
 //import AddTask from "./AddTask";
-import FormTask from "./FormTask";
+//import FormTask from "./FormTask";
 
 /* Will be removed */
 const tasksTemp = [];
@@ -51,9 +51,9 @@ class Todo extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <div>Todo List App On React</div>
-        <FormTask onSubmit={this.addTask} tasks={this.state.tasks} />
+      <div className="warrper-list">
+        {/*<div>Todo List App On React</div>*/}
+        {/*<FormTask onSubmit={this.addTask} tasks={this.state.tasks} />*/}
 
         <List tasks={this.state.tasks} />
       </div>

@@ -1,0 +1,104 @@
+li {
+  border-bottom: 2px solid black;
+}
+
+.warpper-list-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.warpper-list-item > div {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.start-warp {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.start-warp > div {
+  margin: 0.4em;
+}
+
+.check-item > div {
+  padding: 0.1em;
+  border-radius: 100%;
+}
+
+/***** Item done undone *****/
+.fas {
+  font-weight: 600;
+}
+.done-item {
+  border: none;
+  border-radius: 100%;
+  background-color: #77f0c7;
+  color: white;
+}
+.undone-item {
+  border: 1px solid grey;
+  border-radius: 100%;
+  background-color: #f0f8ff;
+  color: grey;
+}
+
+/*** Item title ***/
+.item-title {
+  background: whitesmoke;
+  font-size: calc(7px + 2vmin);
+  color: #282c34;
+}
+
+/*************************************************/
+/******************* End Box *********************/
+/*************************************************/
+.end-warp {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  background-color: whitesmoke;
+}
+
+.end-warp > div {
+  margin: 0.4em;
+}
+
+.date-item {
+  background-color: purple;
+}
+
+/*Status Item*/
+.status-item {
+  border: none;
+  border-radius: 5em; /*2em / 5em;*/
+  font-size: smaller;
+  width: 100px;
+}
+
+.status-item-beta {
+  background-color: #fc94af;
+}
+
+.status-item-plan {
+  background-color: #ab5ce6;
+}
+
+.status-item-test {
+  background-color: #97defe;
+}
+
+/*Item user-img*/
+.img-usr {
+  float: right;
+  background-color: #61dafb;
+  border: 2px solid black;
+  border-radius: 100%;
+}
+
+.img-usr > img {
+  width: 30px;
+  float: right;
+  border-radius: 100%;
+}
