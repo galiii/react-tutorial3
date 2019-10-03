@@ -9,6 +9,7 @@
   /* display: flex; */
   /* flex: 1; */
   /* flex-direction: row; */
+  min-height: 96vh;
   background-color: #ffffff;
   /*min-width: 100vh;*/
 }

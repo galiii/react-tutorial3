@@ -1,5 +1,5 @@
 import React from "react";
-import "./list.css";
+import "./css/list.css";
 import Item from "./Item";
 
 const List = ({ tasks }) => {

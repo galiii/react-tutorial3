@@ -1,5 +1,5 @@
 import React from "react";
-import "./todo.css";
+import "./css/todo.css";
 import List from "./List";
 //import AddTask from "./AddTask";
 //import FormTask from "./FormTask";
