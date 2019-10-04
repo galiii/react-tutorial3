@@ -3,7 +3,8 @@
 /******************************************/
 
 .list {
-  margin: 1em;
+  margin: 187px 1em 1em 1em;
+  /*margin-top: 192px;*/
   padding: 0.2em;
   /* min-width: 100vh; */
   /* display: flex; */

@@ -10,31 +10,71 @@ tasksTemp.push({
   dueDate: 1,
   done: true,
   title: "Defualt\t",
-  stats: "planning",
+  stats: "Planning",
   usr: "img1"
 });
 tasksTemp.push({
   dueDate: 2,
   done: true,
   title: "another\tname",
-  stats: "in Beta",
+  stats: "In Beta",
   usr: "img2"
 });
 tasksTemp.push({
   dueDate: 3,
   done: false,
   title: "Dan\ttask",
-  stats: "a/b test",
+  stats: "A/B test",
   usr: "img3"
 });
 tasksTemp.push({
   dueDate: 4,
   done: true,
   title: "defualt: new task",
-  stats: "in Beta",
+  stats: "In Beta",
   usr: "img4"
 });
+tasksTemp.push({
+  dueDate: 5,
+  done: false,
+  title: "A long bl bla teast",
+  stats: "Planning",
+  usr: "img5"
+});
 
+tasksTemp.push({
+  dueDate: 6,
+  done: true,
+  title: "defualt: new task",
+  stats: "A/B test",
+  usr: "img6"
+});
+
+tasksTemp.push({
+  dueDate: 7,
+  done: true,
+  title: "defualt: new task",
+  stats: "In Beta",
+  usr: "img7"
+});
+
+/*
+tasksTemp.push({
+  dueDate: 8,
+  done: false,
+  title: "defualt: long", //long long long bbbbbbb",
+  stats: "a/b test",
+  usr: "img8"
+});
+
+tasksTemp.push({
+  dueDate: 9,
+  done: true,
+  title: "defualt: new task",
+  stats: "in Beta",
+  usr: "img9"
+});
+*/
 class Todo extends React.Component {
   constructor(props) {
     super(props);

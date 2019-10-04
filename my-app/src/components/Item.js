@@ -9,25 +9,32 @@ export default function Item({ index, done, title, dueDate, stats, usr }) {
         <div className="start-warp">
           <div className=" check-item">
             <div
-              className={`fas fa-check
+              className={`fas fa-check fa-xs
               ${done ? " done-item " : " undone-item"}`}
             ></div>
           </div>
-          <div className="item-title">{title}</div>
+          <div
+            className={`item-title 
+          ${done ? "done-title" : "undone-title"}`}
+          >
+            <span>{title}</span>
+          </div>
         </div>
         <div className="end-warp">
-          <div className="date-item">{dueDate}</div>
-          <div
-            className={`status-item
-          ${stats === "planning" ? "status-item-plan" : ""}
-          ${stats === "in Beta" ? "status-item-beta" : ""}
-          ${stats === "a/b test" ? "status-item-test" : ""}
+          <div className="container-end">
+            <div className="date-item">{dueDate}</div>
+            <div
+              className={`status-item
+          ${stats === "Planning" ? "status-item-plan" : ""}
+          ${stats === "In Beta" ? "status-item-beta" : ""}
+          ${stats === "A/B test" ? "status-item-test" : ""}
         `}
-          >
-            {stats}
-          </div>
-          <div className="img-usr">
-            <img src={logo} alt="Logo" />
+            >
+              {stats}
+            </div>
+            <div className="img-usr">
+              <img src={logo} alt="Logo" />
+            </div>
           </div>
         </div>
       </div>
