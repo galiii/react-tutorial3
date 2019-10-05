@@ -7,9 +7,9 @@ export default function Item({ index, done, title, dueDate, stats, usr }) {
     <li>
       <div className="warpper-list-item">
         <div className="start-warp">
-          <div className=" check-item">
+          <div className="check-item">
             <div
-              className={`fas fa-check fa-xs
+              className={`fas fa-check
               ${done ? " done-item " : " undone-item"}`}
             ></div>
           </div>
@@ -24,13 +24,13 @@ export default function Item({ index, done, title, dueDate, stats, usr }) {
           <div className="container-end">
             <div className="date-item">{dueDate}</div>
             <div
-              className={`status-item
+              className={`status-item 
           ${stats === "Planning" ? "status-item-plan" : ""}
           ${stats === "In Beta" ? "status-item-beta" : ""}
           ${stats === "A/B test" ? "status-item-test" : ""}
         `}
             >
-              {stats}
+              <span className="status-font">{stats}</span>
             </div>
             <div className="img-usr">
               <img src={logo} alt="Logo" />

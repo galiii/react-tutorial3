@@ -1,74 +1,92 @@
+/* The Parent of all the items */
 li {
   border-bottom: 2px solid black;
 }
 
+/* The Son of li */
 .warpper-list-item {
   display: flex;
-  align-items: flex-start;
+  flex: 1;
 }
 
+/* 
+      The children of warpper-list-item:
+                div start-warp
+                div end-warp
+          having margin and padding
+ */
 .warpper-list-item > div {
   margin: 0.3em;
   padding: 0.3em;
 }
 
+/*************************************************/
+/******************* Start Box *********************/
+/*************************************************/
+
 .start-warp {
   width: 35%;
   background-color: whitesmoke;
+  float: left;
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 
+/*
+          The children of start-warp:
+                div check-item (who have children (done/undone)-item  
+                div end-warp item-title
+            having margin and padding
+*/
 .start-warp > div {
-  margin: 0.2em;
-  padding: 0.2em;
+  /*margin: 0.1em;
+  padding: 0.1em;*/
 }
 
-/***** Item Check - done/undone *****/
+/***
+      .check-item The first 
+       Child of .start warp 
+****/
 .check-item {
-  margin: 0;
-  /* padding: 0%;
-  background-color: #61dafb;*/
+  padding-left: 20px;
+  padding-right: 22px;
 }
 
+/*
+          The children of check-item:
+                  div undone-item
+                       OR
+                  div done-item
+          having margin and padding
+*/
 .check-item > div {
-  border: 2px solid black;
-  /*padding: 0.1em;*/
+  /* border: 2px solid black;*/
   border-radius: 100%;
 }
 
 .fas {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 23px;
+  font-weight: 700;
 }
 
-.fa-check {
-  color: #ab5ce6;
-}
 .done-item {
-  /*border: 2px solid #92f3e3;*/
-  border-color: black;
-  /*border: none;*/
-  /*border-radius: 100%;*/
+  border: 2px solid #92f3e3;
   background-color: #92f3e3;
   color: white;
 }
 .undone-item {
-  /*border: 2px solid grey;*/
-  border-color: grey;
-  /*border-radius: 100%;*/
+  border: 2px solid #cacfd4;
   background-color: #f0f8ff;
   color: #cacfd4;
 }
 
 /*** Item title ***/
 .item-title {
-  /* background-color: #fc94af;*/
   background: whitesmoke;
-  font-size: calc(1px + 2vmin);
+  font-size: calc(6px + 2vmin);
   font-weight: bold;
-  /*color: #282c34;*/
 }
 
 .undone-title {
@@ -84,56 +102,53 @@ li {
 /******************* End Box *********************/
 /*************************************************/
 .end-warp {
-  /*width: 51%;*/
   display: flex;
   flex: 1;
-  justify-content: space-between;
-  /*justify-content: flex-end;*/
-  /*justify-content: space-around;*/
-  /* align-items: flex-end;*/
-  background-color: pink;
+  /*justify-content: space-between;*/
+  /* flex-direction: row;*/
+  justify-content: flex-end;
+  /* background-color: rgb(182, 138, 138); */
 }
 
 .container-end {
-  width: 100%;
+  width: 50%;
   display: flex;
-  /*flex: 1;*/
-  justify-content: flex-end;
-  align-items: center;
-  background-color: green;
+  /*flex-wrap: wrap;*/
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  /* background-color: red; */
 }
 
 .container-end > div {
-  margin: 7px;
+  /*margin: 7px;
   font-size: small;
+  */
 }
 
+.container-end > div {
+  font-size: smaller;
+}
 .date-item {
-  background-color: purple;
+  align-self: center;
+  background-color: green;
 }
 
 /*Status Item*/
 .status-item {
-  margin: 1em;
-  padding: 1px;
-  /* margin-right: -32px; */
-  /* padding: 0.2em 1em 0.5em 1em; */
-  /* border: none; */
-  border-radius: 72em;
-  font-size: smaller;
-  width: 23%;
-
-  /*margin: 0;*/
-
   /*margin: 1em;*/
-  /*margin-right: -32px;*/
-  /*padding: 0.2em 1em 0.5em 1em;*/ /* top right buttom left*/
-  /*border: none;
-  border-radius: 5em; /*2em / 5em;*/
-  /*font-size: smaller;
-  width: 25%;*/
+  width: 35%;
+  height: 30px;
+  border-radius: 72em;
 }
 
+.status-font {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
 .status-item-beta {
   background-color: #fc94af;
 }
@@ -148,10 +163,8 @@ li {
 
 /*Item user-img*/
 .img-usr {
-  /*margin: 10px;*/
-  margin-bottom: 10px;
-  /*margin-left: 45px;*/
-  float: right;
+  align-self: center;
+  /*float: right;*/
   background-color: #61dafb;
   border: 2px solid black;
   border-radius: 100%;

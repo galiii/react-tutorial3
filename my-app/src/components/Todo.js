@@ -58,15 +58,15 @@ tasksTemp.push({
   usr: "img7"
 });
 
-/*
 tasksTemp.push({
   dueDate: 8,
   done: false,
   title: "defualt: long", //long long long bbbbbbb",
-  stats: "a/b test",
+  stats: "A/B test",
   usr: "img8"
 });
 
+/*
 tasksTemp.push({
   dueDate: 9,
   done: true,
