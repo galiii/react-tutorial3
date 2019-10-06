@@ -25,13 +25,15 @@ li {
 /*************************************************/
 
 .start-warp {
-  width: 35%;
+  /*width: 35%;*/
   background-color: whitesmoke;
   float: left;
   display: flex;
+  flex: 1;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  /*  background-color: #61dafb;*/
 }
 
 /*
@@ -48,7 +50,7 @@ li {
 /***
       .check-item The first 
        Child of .start warp 
-****/
+***/
 .check-item {
   padding-left: 20px;
   padding-right: 22px;
@@ -62,7 +64,6 @@ li {
           having margin and padding
 */
 .check-item > div {
-  /* border: 2px solid black;*/
   border-radius: 100%;
 }
 
@@ -72,12 +73,12 @@ li {
 }
 
 .done-item {
-  border: 2px solid #92f3e3;
+  border: 2px double #92f3e3;
   background-color: #92f3e3;
   color: white;
 }
 .undone-item {
-  border: 2px solid #cacfd4;
+  border: 2px double #cacfd4;
   background-color: #f0f8ff;
   color: #cacfd4;
 }
@@ -91,7 +92,6 @@ li {
 
 .undone-title {
   color: black;
-  /* font-weight: bold;*/
 }
 
 .done-title {
@@ -103,28 +103,19 @@ li {
 /*************************************************/
 .end-warp {
   display: flex;
-  flex: 1;
-  /*justify-content: space-between;*/
-  /* flex-direction: row;*/
+  flex: 2;
   justify-content: flex-end;
-  /* background-color: rgb(182, 138, 138); */
+  /*background-color: rgb(182, 138, 138);*/
 }
 
 .container-end {
   width: 50%;
   display: flex;
-  /*flex-wrap: wrap;*/
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-end;
   /* background-color: red; */
-}
-
-.container-end > div {
-  /*margin: 7px;
-  font-size: small;
-  */
 }
 
 .container-end > div {
@@ -164,14 +155,14 @@ li {
 /*Item user-img*/
 .img-usr {
   align-self: center;
-  /*float: right;*/
   background-color: #61dafb;
-  border: 2px solid black;
+  border: 2px solid whitesmoke;
   border-radius: 100%;
 }
 
+/* The img props */
 .img-usr > img {
-  width: 16px;
+  width: 26px;
   float: right;
   border-radius: 100%;
 }
