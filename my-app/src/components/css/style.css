@@ -1,31 +1,3 @@
-/*****************************************************/
-/*************  AddTask.js Component   **************/
-/***************************************************/
-.warpper-add-task {
-  margin: 0.5em;
-  padding: 0.5em;
-  display: flex;
-  flex-wrap: warp;
-  background-color: whitesmoke;
-}
-
-.btn {
-  padding: 15px 32px;
-  margin: 4px 2px;
-  background-color: white;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-.btn-task {
-  color: #008cba;
-  border: 2px solid #008cba;
-}
-
 /****************************************/
 /**             FormTask               **/
 /****************************************/

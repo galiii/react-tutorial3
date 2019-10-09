@@ -3,16 +3,9 @@
 /******************************************/
 
 .list {
-  margin: 187px 1em 1em 1em;
-  /*margin-top: 192px;*/
   padding: 0.2em;
-  /* min-width: 100vh; */
-  /* display: flex; */
-  /* flex: 1; */
-  /* flex-direction: row; */
   min-height: 96vh;
   background-color: #ffffff;
-  /*min-width: 100vh;*/
 }
 
 .list > ul {

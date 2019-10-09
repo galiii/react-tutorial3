@@ -1,0 +1,38 @@
+/*****************************************************/
+/*************  AddTask.js Component   **************/
+/***************************************************/
+.warrper {
+  width: 60%;
+  /*background-color: aqua;*/
+}
+
+.warpper-add-task {
+  margin: 0.5em;
+  /*padding: 0.5em;*/
+  padding-top: 0.5em;
+  padding-left: 2em;
+  display: flex;
+  background-color: whitesmoke;
+}
+
+.btn {
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin: 4px 2px;
+  background-color: white;
+  border: none;
+  /*color: white;*/
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-task {
+  color: #008cba;
+  border: 2px solid #008cba;
+}

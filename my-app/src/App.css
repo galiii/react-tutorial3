@@ -9,12 +9,12 @@
 }
 
 .App-header {
-  /*background-color: #f6f8f9;*/
+  /*width: 100%;*/
   background-color: black;
   display: flex;
   flex-direction: column;
+  /*justify-content: space-between;*/
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;

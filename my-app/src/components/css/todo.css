@@ -4,10 +4,7 @@
 /*      Todo.js Component      */
 /******************************/
 .warrper-list {
-  width: 61%;
+  width: 60%;
+  border: 2px rgb(201, 95, 95) double;
   /*display: flex;*/
-  flex: 1;
-  text-align: center;
-  align-items: center;
-  /*justify-content: center;*/
 }

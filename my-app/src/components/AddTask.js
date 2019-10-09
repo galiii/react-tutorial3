@@ -1,10 +1,12 @@
 import React from "react";
-import "./style.css";
+import "./css/addBtn.css";
 
 const AddTask = props => {
   return (
-    <div className="warpper-add-task">
-      <input type="button" className="btn btn-task" value="Add Task"></input>
+    <div className="warrper">
+      <div className="warpper-add-task">
+        <input type="button" className="btn-task btn" value="Add Task"></input>
+      </div>
     </div>
   );
 };
